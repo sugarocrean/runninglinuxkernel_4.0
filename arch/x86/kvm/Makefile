@@ -1,7 +1,8 @@
 
 ccflags-y += -Ivirt/kvm -Iarch/x86/kvm
 
-CFLAGS_x86.o := -I.
+CFLAGS_x86.o := -I. -O1
+CFLAGS_mmu.o := -O1
 CFLAGS_svm.o := -I.
 CFLAGS_vmx.o := -I.
 
